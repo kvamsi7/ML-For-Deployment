@@ -1,0 +1,135 @@
+Task1
+
+2.
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple
+of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a
+comma-separated sequence on a single line.
+
+code: 
+
+''' Programmer name : katam Vamsi Krishna
+    Mail : vamsikrishna.katamreddy@gmail.com'''
+
+#method 1 not storing in any data structure
+
+for i in range(2000,3201):
+  if i % 7==0 and i % 5 !=0:
+    print(i,end=",")
+    
+#method 2 storing in a list
+
+numbers= []
+
+for i in range(2000,3201):
+  if i % 7==0 and i % 5 !=0:
+    numbers.append(i)
+else:
+  print(numbers)
+  
+  
+  
+  
+3.
+Write a Python program to accept the user's first and last name and then getting them printed in
+the the reverse order with a space between first name and last name.
+
+code: 
+
+firstName = input()
+lastName = input()
+
+print(firstName[::-1],"",lastName[::-1])
+
+
+
+4.
+Write a Python program to find the volume of a sphere with diameter 12 cm.
+code:
+
+diameter = 12
+radius = diameter/2
+
+volume = 4/3*math.pi*radius**3
+
+print(volume)
+
+
+Task 2:
+
+1.
+Write a program which accepts a sequence of comma-separated numbers from console and
+generate a list.
+
+code: 
+
+numbers = str(input("Enter some comma separated values: "))
+
+li1 = numbers.split(",")
+
+#print(li1)
+
+li2 =[]
+for i in li1:
+  li2.append(int(i))
+  
+print(li2)
+
+
+2.
+Create the below pattern using nested for loop in Python.
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+code: 
+
+for i in range(1,6):
+  for j in range(1,i+1):
+    print(" *",end="")
+  else:
+    print()
+
+for i in range(4,0,-1):
+  for j in range(i,0,-1):
+    print(" *",end="")
+  else:
+    print()
+    
+
+3.
+  Write a Python program to reverse a word after accepting the input from the user.
+Sample Output:
+Input word: AcadGild
+Output: dilGdacA
+
+code:
+
+str1 = input("Enter some word: ")
+str1 = str1[::-1]
+print("reverse of word is :",str1)
+
+
+
+4.
+Write a Python Program to print the given string in the format specified in the sample output.
+WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a
+SOVEREIGN, SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC and to secure to all
+its citizens
+
+Sample Output:
+WE, THE PEOPLE OF INDIA,
+  having solemnly resolved to constitute India into a SOVEREIGN, !
+    SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC
+     and to secure to all its citizens
+code:
+
+print("WE, THE PEOPLE OF INDIA,\n\t having solemnly resolved to constitute India into a SOVEREIGN,! \n\t\tSOCIALIST, SECULAR, DEMOCRATIC REPUBLIC \n\t\t and to secure to all its citizens")
+
+
+ 
